@@ -262,14 +262,19 @@
   var templates = {
     'Template 1': {
       card: {
-      width: 1100,
-      height: 462,
-      fill: '#00d8b8',
-      editable: {
-        width: true,
-        height: true,
-        fill: true
-      }
+        width: 1100,
+        height: 462,
+      },
+      layers: {
+        headline: {
+          y: 43
+        },
+        image: {
+          y: 380
+        },
+        imageMask: {
+          height: 350
+        }
       }
     },
     'Template 2': {
