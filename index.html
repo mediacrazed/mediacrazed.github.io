@@ -278,9 +278,9 @@
   
   // Instantiate CardKit
   var cardkit = new CardKit(configuration, {
+    templates: templates,
     themes: themes,
-    layouts: layouts,
-    templates: templates
+    layouts: layouts
   });
   var renderer = new CardKitDOM(cardkit);
   // Render the UI
