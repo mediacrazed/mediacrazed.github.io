@@ -143,7 +143,24 @@
           text: true
         },
         text: '@CardKit on Twitter'
-      }
+      },
+      image2: {
+        type: 'image',
+        name: 'Featured Image',
+        x: 400,
+        draggable: true,
+        width: 500,
+        get height() {
+          return this.width;
+        },
+        editable: {
+          src: true,
+          width: {
+            max: 1000
+          }
+        },
+        src: 'http://via.placeholder.com/350x150'
+      },
     }
   };
   var themes = {
