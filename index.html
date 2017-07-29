@@ -154,9 +154,17 @@
         get height() {
           return this.width;
         },
-        opacity: 0.5,
+        opacity: 1,
         editable: {
           src: true,
+          opacity: true,
+          filters: [
+            'sepia',
+            'grayscale',
+            'saturate',
+            'invert',
+            'blur'
+           ],
           width: {
             max: 1000
           }
